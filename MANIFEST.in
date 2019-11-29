@@ -1,0 +1,2 @@
+recursive-include spoteno/resources *.json
+include LICENSE README.md

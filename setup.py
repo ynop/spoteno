@@ -71,7 +71,7 @@ setup(name='spoteno',
           'Programming Language :: Python :: 3 :: Only',
           'Topic :: Scientific/Engineering :: Human Machine Interfaces'
       ],
-      keywords='audio music sound corpus dataset',
+      keywords='ASR speech recognition spoken text normalization transcripts',
       license='MIT',
       packages=find_packages(exclude=['tests']),
       install_requires=REQUIRED,
