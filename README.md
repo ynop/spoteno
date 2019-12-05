@@ -1,4 +1,7 @@
 # spoteno
+
+[![PyPI](https://img.shields.io/pypi/v/spoteno.svg)](https://pypi.python.org/pypi/spoteno)
+
 spoteno (Spoken-Text-Normalization) is a tool to cleanup text-transcripts for speech recognition systems.
 These systems normally expect target transcripts to contain only characters from a restricted set.
 
