@@ -95,3 +95,31 @@ python setup.py test
 With PyCharm you might have to change the default test runner. Otherwise, it might only suggest to use nose. To do so,
 go to File > Settings > Tools > Python Integrated Tools (on the Mac it's PyCharm > Preferences > Settings > Tools >
 Python Integrated Tools) and change the test runner to py.test.
+
+
+### Versions
+
+Versions is handled using [bump2version](https://github.com/c4urself/bump2version). To bump the version:
+
+```
+bump2version [major,minor,patch,release,num]
+```
+
+In order to directly go to a final relase version (skip .dev/.rc/...):
+
+```
+bump2version [major,minor,patch] --new-version x.x.x
+```
+
+### Release
+
+Commands to create a new release on pypi.
+
+```
+rm -rf build
+rm -rf dist
+
+python setup.py sdist
+python setup.py bdist_wheel
+twine upload dist/*
+```

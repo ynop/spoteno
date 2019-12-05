@@ -23,6 +23,7 @@ EXTRAS = {
         'pytest-runner==5.2',
         'pytest-cov==2.8.1',
         'pytest-benchmark==3.2.2',
+        'bump2version'
     ],
     'ci': [
         'flake8==3.7.9',
@@ -57,7 +58,7 @@ except FileNotFoundError:
 ##################################################
 
 setup(name='spoteno',
-      version='0.1.0',
+      version='0.0.0',
       description=DESCRIPTION,
       long_description=long_description,
       long_description_content_type='text/markdown',
