@@ -13,10 +13,10 @@ class StripChar:
         self.chars = chars
 
     def run(self, token):
-        while token[0] in self.chars:
+        while len(token) > 0 and token[0] in self.chars:
             token = token[1:]
 
-        while token[-1] in self.chars:
+        while len(token) > 0 and token[-1] in self.chars:
             token = token[:-1]
 
         return [token]
