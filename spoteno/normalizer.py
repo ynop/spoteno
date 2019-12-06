@@ -46,7 +46,7 @@ class Normalizer:
 
                 normalized = list(tqdm(
                     p.imap(func, sentences),
-                    len(sentences)
+                    total=len(sentences)
                 ))
         else:
             normalized = [self.normalize(s) for s in sentences]
